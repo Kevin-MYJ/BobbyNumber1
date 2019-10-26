@@ -1,4 +1,3 @@
-# BobbyNumber1
 Iteration 0
 
 Group Member: ZiYang Jiang, Guangfeng Lin, Muzi Jiang,Yuhao Cao, Yue Ma.
@@ -10,3 +9,5 @@ Which has two methods to play this game. One of them is called “Guest”when p
 In the future, we are thinking of adding a feature that will record the time each player spend to pass the level, the less time the user spend, the more points that the player will get.
 
 Github: https://github.com/zyjiang1998/BobbyNumber1.git
+
+Heroku: heroku git:clone -a bobbysohandsome
