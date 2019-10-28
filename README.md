@@ -1,13 +1,39 @@
-Iteration 0
+# node-js-getting-started
 
-Group Member: ZiYang Jiang, Guangfeng Lin, Muzi Jiang,Yuhao Cao, Yue Ma.
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-Magical Matrix is a brain practice web application game. When playing this game, the screen will display an N*N matrix (N will get larger as game goes), each element in the matrix will be displayed as a square. At the beginning of each round, some randomly assigned squares will be colored differently, after 3 seconds, those squares will be turned back to normal color, then the whole matrix will be rotated either right or left (also random), players are supposed to memorize the colored ones and select them all in order to pass the level. This game designs for people who want to train their memory skills or wanted to spend their spare time, such as teenagers and seniors.
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-Which has two methods to play this game. One of them is called “Guest”when players choose to play as a Guest, his score and data will not be recorded in our database. Latter method will have a login option, where the player’s name will be displayed on the Leaderboard as well as his score. On the leaderboard, it will record scores in decreasing order, only logged in users will have their username and scores being recorded.
+## Running Locally
 
-In the future, we are thinking of adding a feature that will record the time each player spend to pass the level, the less time the user spend, the more points that the player will get.
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
 
-Github: https://github.com/zyjiang1998/BobbyNumber1.git
+```sh
+$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
+```
 
-Heroku: heroku git:clone -a bobbysohandsome
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
+```
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Documentation
+
+For more information about using Node.js on Heroku, see these Dev Center articles:
+
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
