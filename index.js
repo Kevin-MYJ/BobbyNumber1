@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const PORT = process.env.PORT || 5050
+const PORT = process.env.PORT || 5000
 var app = express();
 
 const {Pool} = require('pg');
@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.get('/', (req,res) =>{
-  var create_table = `create table if not exists uers(id serial, username text, password char(50))`
+  var create_table = `create table if not exists users(id serial, username text, password char(50))`
     pool.query(create_table, (error, result) => {
     });
     res.render('pages/home');
